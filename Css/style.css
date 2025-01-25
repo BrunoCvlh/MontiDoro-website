@@ -1,0 +1,63 @@
+body {
+    background-image: url('Images/wallpaper_site.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+}
+.carousel-inner, .carousel-item img {
+    margin: 0; /* Remove qualquer margem */
+    padding: 0; /* Remove qualquer preenchimento */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+.footer a {
+    color: white;
+    margin: 0 15px;
+    font-size: 24px;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #00aaff;
+}
+.navbar-space {
+    height: 70px; /* Ajuste conforme necessário */
+}
+.dropdown-menu {
+    left: 0; /* Alinha o dropdown ao lado esquerdo */
+    right: 0; /* Remove qualquer desalinhamento à direita */
+    margin: auto; /* Garante centralização */
+}
+@media (max-width: 768px) {
+.navbar-brand {
+    display: none; /* Oculta o título da navbar em dispositivos móveis */
+}
+#carouselExampleCaptions {
+  margin-left: 0;
+}
+#logo1 {
+    width: 50px; /* Ajuste conforme necessário */
+    height: 50px; /* Ajuste conforme necessário */
+    padding-bottom: 2px;
+}
+.dropdown {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+}
+.card-title{
+    font-size: 10px;
+}
+.card-price{
+    font-size: 10px;
+}
+.body{
+    font-family: "Gill Sans", sans-serif;
+}
+}

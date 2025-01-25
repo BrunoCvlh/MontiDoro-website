@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Monti D'oro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="card-flip.css">
+    <style>
+      body {
+        background-image: url("Images/wallpaper_site.png");
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Navbar -->
+    <nav class="navbar bg-dark fixed-top">
+      <div
+        class="container d-flex flex-column align-items-center position-relative"
+      >
+        <!-- Logo no canto esquerdo -->
+        <a class="position-absolute top-0 start-0 mt-2 ms-2" href="#">
+          <img
+            src="Images/Logo Monti Dark.png"
+            id="logo1"
+            alt="Logo"
+            width="70"
+            height="70"
+            style="border-radius: 50%"
+          />
+        </a>
+        <!-- Nome e Dropdown Centralizados -->
+        <div class="text-center mb-2">
+          <a class="navbar-brand" href="#" style="color: white">
+            O MELHOR DO SUL ARTESANAIS - MONTI D'ORO
+          </a>
+          <!-- Dropdown para os links -->
+          <div class="dropdown mt-2">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="color: white"
+            >
+              Produtos
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-dark text-center"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <li><a class="dropdown-item" href="#vinhos">Vinhos</a></li>
+              <li>
+                <a class="dropdown-item" href="#chopps">Chopps de Vinho</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#garrafao">Garrafão de Vinho</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#espumantes">Espumantes</a>
+              </li>
+              <li><a class="dropdown-item" href="#sucos">Sucos</a></li>
+              <li><a class="dropdown-item" href="#cachacas">Cachaças</a></li>
+              <li>
+                <a class="dropdown-item" href="#destilados">Destilados</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#meis_geleias">Mel e Geléias</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Espaço para compensar a navbar fixa -->
+    <div class="navbar-space"></div>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="Images/carrossel promoção-vinho.png"
+            class="d-block w-100 img-fluid"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Images/carrossel promoção chopp.png"
+            class="d-block w-100 img-fluid"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Images/Capa Entregas.png"
+            class="d-block w-100 img-fluid"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container my-4">
+      <h1
+        class="text-center"
+        id="vinhos"
+      >
+        VINHOS
+      </h1>
+      <p>
+        Descubra nossa seleção de vinhos, cada um com sua própria personalidade
+        e estilo. Nossa coleção inclui vinhos tintos suaves e secos, elaborados
+        a partir da uva Bordô, perfeitos para harmonizar com queijos e carnes
+        grelhadas. Os vinhos brancos suaves e secos, feitos com uva Niágara
+        Verde, são ideais para ocasiões informais e celebrações, enquanto os
+        vinhos rosé suaves e secos, feitos com uva Niágara Rosada, oferecem uma
+        combinação refrescante e versátil para saladas e sobremesas. Explore
+        nossas opções e encontre o vinho perfeito para qualquer momento!
+      </p>
+    </div>
+<!-- Cards Primeira Fileira -->
+<div class="container my-4">
+  <div class="row justify-content-center g-3">
+    <!-- Card 1 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Vinho Tinto Suave 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 35,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vinho Tinto Suave 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Vinho Branco Suave 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 35,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vinho Branco Suave 750ml</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Vinho Rosé Suave 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 35,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vinho Rosé Suave 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Vinho Tinto Demi-Seco 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 35,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vinho Tinto Demi-Seco 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Vinho Tinto Seco 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 35,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vinho Tinto Seco 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Vinho Rosé Seco 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 35,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vinho Rosé Seco 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 7 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Vinho Branco Seco 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 35,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vinho Branco Seco 750ml</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container my-4">
+      <h1
+        class="text-center"
+        id="chopps"
+      >
+        CHOPPS DE VINHO
+      </h1>
+      <p>
+        Experimente a fusão perfeita entre a cultura cervejeira e vinícola com
+        nossos choppes de vinho artesanais. Disponíveis em versões tinto e
+        branco, essas bebidas refrescantes combinam elementos de cerveja e
+        vinho, criando coquetéis únicos e deliciosos. São uma alternativa
+        refrescante para os amantes de bebidas alcoólicas e, sem dúvida, um dos
+        preferidos dos nossos clientes.
+      </p>
+    </div>
+
+ <!-- Cards Terceira Fileira -->
+<div class="container my-4">
+  <div class="row justify-content-center g-3">
+    <!-- Card 1 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Chopp de Vinho Tinto 600ml.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 17,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Chopp de Vinho Tinto 600ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Chopp de Vinho Branco 600ml.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 17,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Chopp de Vinho Branco 600ml</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4">
+  <h1 class="text-center" id="garrafao">
+    GARRAFÃO DE VINHO
+  </h1>
+  <p>
+    Agora que você já conhece as uvas e as harmonizações ideais para cada vinho, que tal garantir seu garrafão, economizando e garantindo muito vinho para seu almoço ou celebração?
+  </p>
+</div>
+
+<div class="container my-4">
+  <div class="row justify-content-center g-3">
+    <!-- Card 1 -->
+    <div class="col-6 col-md-8 col-lg-6">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Garrafão de Vinho 4.6L.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 120,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Garrafão de Vinho 4.6l</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container my-4">
+      <h1
+        class="text-center"
+        id="espumantes"
+      >
+        ESPUMANTES
+      </h1>
+      <p>
+        Nossa seleção de espumantes Moscatel é elaborada com uvas da variedade
+        Moscato, utilizando leveduras selecionadas para garantir a qualidade e
+        sabor único. O Espumante Moscatel Rosé apresenta uma atraente coloração
+        rosada, enquanto o Espumante Moscatel Branco mantém uma tonalidade clara
+        e elegante. Ambos são fermentados a baixas temperaturas para preservar
+        os aromas primários, resultando em bebidas frescas, sutis e com uma
+        agradável sensação de doçura ao paladar. Perfeitos para qualquer ocasião
+        especial, nossos espumantes são uma escolha ideal para quem busca
+        refrescar e encantar os sentidos.
+      </p>
+    </div>
+
+ <!-- Cards Quarta Fileira -->
+<div class="container my-4">
+  <div class="row justify-content-center g-3">
+    <!-- Card 1 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Espumante Moscatel Rosé.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 55,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Espumante Moscatel Rosé</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Espumante Moscatel Branco.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 55,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Espumante Moscatel Branco</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4">
+  <h1 class="text-center" id="sucos">
+    SUCOS
+  </h1>
+  <p>
+    Descubra nossa seleção de sucos de uva integrais, produzidos com cuidado e dedicação para garantir o máximo de sabor e benefícios para sua saúde. Nossos sucos são feitos utilizando a uva toda, desde a casca até as sementes, sem adição de água, açúcares ou conservantes. Oferecemos opções em diferentes variedades, como uva Bordô, Niágara Rosada e Niágara Verde, cada uma com seu sabor único e riqueza nutricional.
+  </p>
+</div>
+
+<!-- Cards Quinta Fileira -->
+<div class="container my-4">
+  <div class="row justify-content-center g-3">
+    <!-- Card 2 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Suco de Uva Tinto Integral 1L.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">1L - R$ 25,00/un<br>1.5L - R$ 35,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Suco de Uva Tinto Integral 1l</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Suco de Uva Rosé Integral 1l.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 25,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Suco de Uva Rosé Integral 1l</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/sUCO DE uVA bRANCO iNTEGRAL 1l.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 25,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Suco de Uva Branco Integral 1l</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4">
+  <h1 class="text-center" id="cachacas">
+    CACHAÇAS
+  </h1>
+  <p>
+    Oferecemos uma variedade de cachaças para todos os gostos. Desde a tradicional Cachaça Dourada, que passa por um processo de envelhecimento em barricas de madeira, até a Cachaça Prata, conhecida por sua fabricação artesanal e sabor puro. Além disso, temos opções saborizadas como Abacaxi, Banana, Canela, Gengibre e Coco, perfeitas para quem busca novas experiências. E para levar consigo, nossas Cachaças de Bolso são ideais para momentos de descontração.
+  </p>
+</div>
+
+<!-- Cards Sexta Fileira -->
+<div class="container my-4">
+  <div class="row justify-content-center g-3">
+    <!-- Card 1 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaça Dourada (Barril).jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 45,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça Dourada (Barril)</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaca Prata (Pura).png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 40,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça Prata (Pura)</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaca Abacaxi 750ml.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 45,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça Abacaxi 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaca Abacaxi 750ml.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 45,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça Banana 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaca Abacaxi 750ml.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 45,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça Canela 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaca Abacaxi 750ml.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 45,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça Gengibre 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaca Abacaxi 750ml.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 45,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça de Coco 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaça de Bolso Gengibre 290ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 25,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça de Bolso Gengibre 290ml</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaça de Bolso Banana 290ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 25,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça de Bolso Banana 290ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaça de Bolso Canela 290ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 25,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça de Bolso Canela 290ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaça de Bolso Coco 290ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 25,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça de Bolso Coco 290ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Cachaça de Bolso Abacaxi 290ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 25,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cachaça de Bolso Abacaxi 290ml</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4">
+  <h1 class="text-center" id="destilados">
+    DESTILADOS
+  </h1>
+  <p>
+    Oferecemos uma seleção única de destilados e batidas para todos os gostos. Delicie-se com nossas bebidas refrescantes como Maracujazinho e Limãozinho, que combinam sabores naturais com cravo, lembrando a tradicional caipirinha. Experimente também a Graspa, um destilado intenso e aromático feito a partir do bagaço de uva, perfeito como digestivo ou em coquetéis. Para os amantes de sabores doces, nossas Batidas de Chocolate, Maracujá, Coco e Vinho Tinto são feitas com aguardente de melado, combinadas com ingredientes cremosos e doces, criando uma experiência única no paladar.
+  </p>
+</div>
+
+<!-- Cards Nona Fileira -->
+<div class="container my-4">
+  <div class="row justify-content-center g-3">
+    <!-- Card 1 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Maracujazinho 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 40,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Maracujazinho</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Limãozinho 750ml.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 40,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Limãozinho 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Graspa 750ml.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 70,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Graspa 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Batida de Chocolate 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 50,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Batida de Chocolate 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 1 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Batida de Maracujá 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 50,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Batida de Maracujá 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Batida de Coco 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 50,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Batida de Coco 750ml</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 col-md-6 col-lg-3">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Batida de Vinho Tinto 750ml.jpeg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 50,00/un</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Batida de Vinho Tinto 750ml</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container my-4">
+      <h1
+        class="text-center"
+        id="meis_geleias"
+      >
+        MEL E GELÉIAS
+      </h1>
+      <p>Além disso, oferecemos produtos artesanais como Mel Puro Florada Silvestre, rico em antioxidantes e minerais, e nossas deliciosas Geléias, feitas com frutas frescas e sabores únicos como amora, abacaxi com pimenta, morango, uva, framboesa e jabuticaba.</p>
+    </div>
+
+    <!-- Cards Décima Primeira Fileira -->
+<div class="container my-4">
+  <div class="row justify-content-center g-3">
+    <!-- Card 1 -->
+    <div class="col-5 col-md-6 col-lg-4">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Mel Florada Silvestre.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">
+              300g - R$ 25,00<br>
+              700g - R$ 45,00
+            </p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Mel Puro Florada Silvestre 300g/700g</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-5 col-md-6 col-lg-4">
+      <div class="card h-100" style="background-color: #1c1c1c; color: white">
+        <div class="card-image">
+          <img src="Images/Itens_Catalogo/Geleias.png" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-price">R$ 20,00</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Geléias</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Aviso no final -->
+    <div class="container my-4">
+      <div class="row justify-content-center g-3">
+        <div class="card-body">
+          <p class="card-text">
+            Nos dedicamos à produção de produtos artesanais de alta qualidade,
+            utilizando métodos tradicionais e sustentáveis. Com produção em
+            pequena escala, cada etapa do processo possui um rigoroso controle
+            de qualidade, desde o cultivo das uvas até a elaboração dos
+            produtos.
+          </p>
+          <p class="card-text">
+            Nosso centro de distribuição fica localizado na Rodovia DF-128, na altura do trevo com a
+            BR-020, sentido Planaltina-GO.
+          </p>
+          <a
+            href="https://wa.me/5561986441527?text=Ol%C3%A1%2C%20Germano!%20Tudo%20bem%3F%20Dei%20uma%20olhada%20em%20seu%20site%20e%20tenho%20interesse%20em%20alguns%20produtos."
+            class="btn btn-light"
+            >Faça seu pedido</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Rodapé -->
+    <div class="footer">
+      <p>Conecte-se conosco!</p>
+      <a
+        href="https://wa.me/5561986441527?text=Ol%C3%A1%2C%20Germano!%20Tudo%20bem%3F%20Dei%20uma%20olhada%20em%20seu%20site%20e%20tenho%20interesse%20em%20alguns%20produtos."
+        target="_blank"
+        title="WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/omelhordosulvinhos/"
+        target="_blank"
+        title="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <p>&copy; 2024 Monti D'Oro - Todos os direitos reservados</p>
+    </div>
+  </body>
+</html>
